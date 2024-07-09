@@ -1,0 +1,80 @@
+.container {
+    padding: 20px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #00FFA3;
+  }
+  
+  .paymentIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .paymentOption {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .paymentOption input {
+    margin-right: 10px;
+    transform: scale(1.5);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input {
+    max-width: 950px;
+    width: 100%;
+    height: 50px;
+    border: 4px solid #00FFA3;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+  }
+  
+  .input::placeholder {
+    color: black;
+  }
+  
+  .submitButton {
+    background-color: #00FFA3;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .sidebarToggle {
+    display: none; 
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .sidebarToggle {
+      display: block;
+    }
+  }

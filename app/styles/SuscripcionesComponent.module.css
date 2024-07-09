@@ -1,0 +1,26 @@
+.container {
+    padding: 20px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #00FFA3;
+  }
+  .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sidebarToggle {
+    display: none; 
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .sidebarToggle {
+      display: block;
+    }
+  }

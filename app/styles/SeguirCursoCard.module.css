@@ -1,0 +1,259 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #00FFA3;
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  margin-top: 20px;
+  background-color: #00004B;
+  max-width: 100%;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.progressWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 179px;
+  height: 179px;
+  margin-left: 20px;
+  margin-top: 2%;
+}
+
+.progressWrapperMobile {
+  display: none;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.subtitle {
+  color: #00FFA3;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+.lessons {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 47px;
+  margin-left: 20px;
+}
+
+.button {
+  background-color: #00FFA3;
+  color: #00004B;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  width: 272px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.CircularProgressbar {
+  width: 179px;
+}
+
+.CircularProgressbarMobile {
+  width: 100px;
+}
+
+@media (max-width: 1300px) {
+  .card {
+    padding: 15px;
+  }
+  .imageWrapper img {
+    width: 250px;
+    height: auto;
+  }
+  .progressWrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .title, .lessons, .button {
+    font-size: 22px;
+  }
+  .button {
+    width: 220px;
+    font-size: 20px;
+  }
+  .stars {
+    font-size: 40px;
+  }
+  .details {
+    margin-left: 15px;
+  }
+  .footer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    padding: 10px;
+  }
+  .imageWrapper img {
+    width: 220px;
+    height: auto;
+  }
+  .progressWrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .title, .lessons, .button {
+    font-size: 18px;
+  }
+  .button {
+    width: 200px;
+    font-size: 18px;
+  }
+  .stars {
+    font-size: 35px;
+  }
+  .details {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .imageWrapper {
+    margin-bottom: 10px;
+  }
+  .imageWrapper img {
+    width: 150px;
+    height: auto;
+  }
+  .progressWrapper {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 10px;
+  }
+  .title, .lessons, .button {
+    font-size: 16px;
+    text-align: left;
+  }
+  .button {
+    width: 180px;
+    font-size: 16px;
+  }
+  .stars {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .details {
+
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .progressWrapper {
+    display: none;
+  }
+  .progressWrapperMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .textWrapper {
+    max-width: 70%;
+  }
+  .title {
+    font-size: 18px;
+    max-width: 300px;
+  }
+  .lessons {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .button {
+    width: 160px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .button {
+    width: 140px;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .lessons {
+    font-size: 14px;
+  }
+  .stars {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    width: 120px;
+    font-size: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .lessons {
+    font-size: 12px;
+  }
+  .stars {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 801px) {
+  .progressWrapperMobile {
+    display: none;
+  }
+}

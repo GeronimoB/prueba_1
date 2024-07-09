@@ -1,0 +1,163 @@
+.curso {
+  background-color: #ffffff;
+  padding: 20px;
+  color: #00004B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  max-width: 824px;
+  width: 100%;
+  flex: 1;
+}
+
+.imageContainer {
+  margin: 20px 0;
+}
+
+.details {
+  text-align: center;
+  width: 100%;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00FFA3;
+  margin-bottom: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.incluyeYBotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.incluyeContainer {
+  flex: 1;
+}
+
+.incluye {
+  font-size: 28px;
+  color: #00FFA3;
+  margin: 20px 0;
+  text-align: start;
+}
+
+.courseIncludes {
+  list-style: none;
+  text-align: start;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.courseIncludes li {
+  margin-bottom: 40px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.button, .wishlist {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 45px;
+  margin-bottom: 20px;
+  width: 270px;
+}
+
+.button {
+  background-color: #00F0CC;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wishlist {
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #00F0CC;
+}
+
+.button:hover {
+  background-color: #00F0CC;
+}
+
+.wishlist:hover {
+  background-color: #00F0CC;
+  color: #000;
+}
+
+@media (max-width: 1100px) {
+  .curso {
+    padding: 10px;
+  }
+
+  .imageContainer {
+    margin: 10px 0;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .incluyeYBotones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botones {
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .button, .wishlist {
+    width: 100%;
+    max-width: none;
+    font-size: 20px;
+  }
+
+  .wishlist {
+    font-size: 18px;
+  }
+
+  .incluye {
+    font-size: 24px;
+  }
+
+  .courseIncludes {
+    font-size: 18px;
+  }
+
+  .courseIncludes li {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,122 @@
+.container {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 36px;
+  color: #00FFA3;
+  align-self: flex-start;
+  text-align: start;
+}
+
+.profileSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.circle {
+  width: 258px;
+  height: 258px;
+  border: 2px solid #00F0CC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.innerCircle {
+  width: 228px; 
+  height: 228px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.uploadButton {
+  position: absolute;
+  bottom: -4px;
+  background-color: #00F0CC;
+  color: #00004B;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  max-width: 950px;
+  width: 100%;
+  height: 50px;
+  border: 4px solid #00FFA3;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+}
+
+.inputHalf {
+  flex: 1;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.inputHalf:first-child {
+  margin-right: 20px;
+}
+
+.updateButton {
+  background-color: #00FFA3;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sidebarToggle {
+  display: none; 
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .sidebarToggle {
+    display: block;
+  }
+}

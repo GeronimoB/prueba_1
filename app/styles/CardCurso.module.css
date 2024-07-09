@@ -1,0 +1,222 @@
+.card2 {
+  border: 2px solid #00FFA3;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.card {
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  flex: 1;
+  max-width: 40%;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.content {
+  flex: 2;
+  margin-left: 3%;
+}
+
+.lecciones {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.incluye {
+  margin: 8px 0;
+  color: #00FFA3;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -15%;
+}
+
+.cardTitle {
+  font-size: 28px;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.cardList {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 0;
+}
+
+.cardList li {
+  margin: 15px 0px;
+  margin-left: 10px;
+}
+
+.stars {
+  font-size: 65px;
+  color: #FFD700;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 12% 0;
+  color: #00FFA3;
+}
+
+.button, .wishlist {
+  padding: 10px 0px;
+  border: none;
+  width: 357px;
+  height: 49px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #00FFA3;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.wishlist {
+  background-color: transparent;
+  color: #00FFA3;
+  border: 2px solid #00FFA3;
+}
+
+.button:hover {
+  background-color: #00CC82;
+}
+
+.wishlist:hover {
+  background-color: #00FFA3;
+  color: #000;
+}
+
+.cardLink {
+  color: #00FFA3;
+  text-decoration: underline;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1300px) {
+  .imageContainer {
+    max-width: 100%;
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .imageContainer {
+    max-width: 50%;
+    min-width: 40%;
+  }
+
+  .button, .wishlist {
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 30px;
+    margin: 8% 0;
+  }
+
+  .stars {
+    font-size: 55px;
+  }
+
+  .cardList li:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .button, .wishlist {
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .details {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -15%;
+  }
+  .cardTitle{
+    width: 130%;
+    max-width: 1000px;
+    font-size: 24px;
+  }
+  .imageContainer {
+    max-width: 50%;
+    min-width: 40%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .imageContainer {
+    max-width: 25%;
+  }
+
+  .price {
+    font-size: 25px;
+    margin: 5% 0;
+  }
+
+  .stars {
+    font-size: 45px;
+  }
+
+  .cardList li:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageContainer {
+    max-width: 20%;
+  }
+
+  .button, .wishlist {
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 20px;
+    margin: 3% 0;
+  }
+
+  .stars {
+    font-size: 35px;
+  }
+
+  .cardList li:nth-child(3) {
+    display: none;
+  }
+}
