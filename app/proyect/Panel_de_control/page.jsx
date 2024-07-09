@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -93,6 +93,8 @@ export default function PanelDeControl() {
   const SelectedComponent = componentMap[selectedItem] || componentMap['Panel de control'];
 
   return (
+
+    <Suspense fallback={<div>Loading...</div>}>
     <div className={styles.container}>
       <Navbar />
       <div className={`${styles.mainContent} ${isSidebarOpen ? styles.sidebarOpen : ''}`}>
@@ -130,5 +132,6 @@ export default function PanelDeControl() {
       {isSidebarOpen && <div className={styles.overlay} onClick={toggleSidebar}></div>}
       <Footer />
     </div>
+    </Suspense>
   );
 }

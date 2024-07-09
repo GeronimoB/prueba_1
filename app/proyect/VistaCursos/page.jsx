@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -38,6 +38,7 @@ export default function VistaCursos() {
   const porcentajeCompletitud = Math.round((selectedClass / totalClasses) * 100);
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div className={styles.container}>
       <Navbar />
       <div className={styles.mainContent}>
@@ -78,5 +79,6 @@ export default function VistaCursos() {
       </div>
       <Footer />
     </div>
+    </Suspense>
   );
 }
