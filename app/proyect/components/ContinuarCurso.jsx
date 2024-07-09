@@ -6,7 +6,7 @@ export default function ContinuarCurso({ porcentaje }) {
   return (
     <div className={styles.curso}>
       <div className={styles.imageContainer}>
-        <Image src="/course-image.PNG" alt="Course Image" width={738} height={593} />
+        <Image src="/course-image.png" alt="Course Image" width={738} height={593} />
       </div>
       <div className={styles.details}>
         <div className={styles.header}>

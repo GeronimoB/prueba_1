@@ -23,7 +23,7 @@ export default function Login() {
         <Image src="/fondo1.png" alt="Fondo 2" layout="fill" objectFit="cover" className={styles.fondo2} />
       </div>
       <div className={styles.logo}>
-        <Image src="/logo.png" alt="Logo" width={412} height={58} />
+        <Image src="/Logo.png" alt="Logo" width={412} height={58} />
       </div>
       <div className={styles.content}>
         <div className={styles.formContainer}>

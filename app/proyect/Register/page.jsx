@@ -25,7 +25,7 @@ export default function Register() {
         />
       </div>
       <div className={styles.logo}>
-        <Image src="/logo.png" alt="Logo" width={300} height={50} />
+        <Image src="/Logo.png" alt="Logo" width={300} height={50} />
       </div>
       <div className={styles.content}>
         <h1 className={styles.title}>Regístrate</h1>

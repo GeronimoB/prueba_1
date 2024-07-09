@@ -16,7 +16,7 @@ export default function SeguirCursoCard() {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Image src="/course-image.PNG" alt="Course Image" width={293} height={235} />
+        <Image src="/course-image.png" alt="Course Image" width={293} height={235} />
       </div>
       <div className={styles.progressWrapper}>
         <CircularProgressbar

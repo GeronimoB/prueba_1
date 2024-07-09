@@ -16,7 +16,7 @@ export default function CardCurso() {
     <div className={styles.card2}>
       <div className={styles.card}>
         <div className={styles.imageContainer}>
-          <Image src="/course-image.PNG" alt="Course Image" layout="responsive" width={16} height={9} className={styles.image} />
+          <Image src="/course-image.png" alt="Course Image" layout="responsive" width={16} height={9} className={styles.image} />
         </div>
         <div className={styles.content}>
           <h3 className={styles.cardTitle}>Precios para pequeñas y medianas empresas</h3>

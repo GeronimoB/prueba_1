@@ -20,7 +20,7 @@ export default function SuscripcionCard() {
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <Image src="/course-image.PNG" alt="Course Image" width={541} height={437} />
+          <Image src="/course-image.png" alt="Course Image" width={541} height={437} />
         </div>
       </div>
     </div>
